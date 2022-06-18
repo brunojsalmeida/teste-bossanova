@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sistema de venda de produtos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> XCode Sistemas - Garanta seus produtos por um preço sem igual.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="interacao.js"></script>
+</head>
+
+<body>
+    <header  class="cabecalho">
+        <a class="menu" href="#" onclick="abrirMenu()"></a>
+        <input class="search" type="search" id="site-search" name="pesquisar" value="" placeholder="O que você procura?">
+        <img class="profile" src="imagens/persona.png" alt="Perfil">
+    </header>
+    <nav class="menu-lateral">
+        <ul>
+            <li class="menu-lateral-item">
+                <a href="#" onclick="fecharMenu()">
+                    <span class="list-close">Fechar</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item-bold">
+                <a href="#">
+                    <span class="icon"><ion-icon name="navigate-outline"></ion-icon></span>
+                    <span class="list">XCode Sistemas</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item active">
+                <a href="#">
+                    <span class="icon-active"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="list-active">Painel</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="list">Clientes</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="list">Mensagens</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item">
+                <a href="#">
+                    <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                    <span class="list">Ajuda</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item">
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="list">Configurações</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item">
+                <a href="#">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <span class="list">Segurança</span>
+                </a>
+            </li>
+            <li class="menu-lateral-item">
+                <a href="#">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="list">Sair</span>
+                </a>
+            </li>
+    </nav>
+    <main>
+    <section class="content-items">
+        <div class="bloco-s1">
+            <div class="content-one-items">
+                <h1 class="h1">450</h1>
+                <p class="paragraph">Acessos</p>
+            </div>
+            <img class="img-1" src="imagens/eye.svg" alt="Visitas">
+        </div>
+        <div class="bloco-s1">
+            <div class="content-one-items">
+                <h1 class="h1">15</h1>
+                <p class="paragraph">Vendas</p>
+            </div>
+            <img class="img-1" src="imagens/bag.svg" alt="Compras">
+        </div>
+        <div class="bloco-s1">
+            <div class="content-one-items">
+                <h1 class="h1">60</h1>
+                <p class="paragraph">Mensagens</p>
+            </div>
+            <img class="img-1" src="imagens/message.svg" alt="Compras">
+        </div>
+        <div class="bloco-s1">
+            <div class="content-one-items">
+                <h1 class="h1">1.154,54</h1>
+                <p class="paragraph">Ganhos</p>
+            </div>
+            <img class="img-1" src="imagens/graphics.svg" alt="Lucro">
+        </div>
+
+    </section>
+    <section class="content-items-two">
+    <div class="table">
+        <div class="table-title">
+            <h1>Relatórios de compras</h1>
+            <button class="button-title">Ver todos</button>
+        </div>
+        <table class="main-table">
+            <tr class="titulos">
+                <td class="nome">Nome</td>
+                <td class="valor">Valor</td>
+                <td class="pagamento">Pagamento</td>
+                <td class="status">Status</td>
+            </tr>
+            <tr class="sessao">
+                <td>Smart TV OLED 55" LG</td>
+                <td>R$ 150,00</td>
+                <td>Pago</td>
+                <td><button class="btn-entregue">Entregue</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>Mouse Gamer Óptico USB</td>
+                <td>R$ 450,00</td>
+                <td>Vencido</td>
+                <td><button class="btn-pendente">Pendente</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>WebCam Logitech 3 MP</td>
+                <td>R$ 50,00</td>
+                <td>Pago</td>
+                <td><button class="btn-estornado">Estornado</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>Teclado Gamer Hyperx Alloy</td>
+                <td>R$ 550,45</td>
+                <td>Pago</td>
+                <td><button class="btn-processando">Processando</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>Monitor IPS 29 " LG Full HD</td>
+                <td>R$ 180,01</td>
+                <td>Pago</td>
+                <td><button class="btn-processando">Processando</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>Mesa Gamer Original</td>
+                <td>R$ 258,45</td>
+                <td>Vencido</td>
+                <td><button class="btn-estornado">Estornado</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>Cadeira gamer: ThunderX3 TGC12</td>
+                <td>R$ 350,41</td>
+                <td>Pago</td>
+                <td><button class="btn-entregue">Entregue</button></td>
+            </tr>
+            <tr class="sessao">
+                <td>PC Dell XPS-8940 Intel Core i7 10700</td>
+                <td>R$ 750,54</td>
+                <td>Vencido</td>
+                <td><button class="btn-pendente">Pendente</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="clientes">
+        <h1 class="clientes-title">Clientes recentes</h1>
+        <div class="bloco-s2">
+            <img class="imgs" src="imagens/homem-adulto.png" alt="User 1">
+            <div>
+                <h2>Naubi Conpert</h2>
+                <p>(48) 99999-9999</p>
+            </div>
+        </div>
+        <div class="bloco-s2">
+            <img class="imgs" src="imagens/mulher-idosa.png" alt="User 2">
+            <div>
+                <h2>Naubi Conpert</h2>
+                <p>(48) 99999-9999</p>
+            </div>
+        </div>
+        <div class="bloco-s2">
+            <img class="imgs" src="imagens/homem-jovem.png" alt="User 3">
+            <div>
+                <h2>Naubi Conpert</h2>
+                <p>(48) 99999-9999</p>
+            </div>
+        </div>
+        <div class="bloco-s2">
+            <img class="imgs" src="imagens/homem-idoso.png" alt="User 4">
+            <div>
+                <h2>Naubi Conpert</h2>
+                <p>(48) 99999-9999</p>
+            </div>
+        </div>
+        <div class="bloco-s2">
+            <img class="imgs" src="imagens/mulher-adulta.png" alt="User 5">
+            <div>
+                <h2>Naubi Conpert</h2>
+                <p>(48) 99999-9999</p>
+            </div>
+        </div>   
+    </div>
+    </section>
+    </main>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
